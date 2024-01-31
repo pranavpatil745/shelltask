@@ -1,4 +1,9 @@
-# Python program to print "Hello Python"  
-print ('Konichiwa')    
+def lambda_handler(event, context):
 
-print('This is my first task integration with shell and jenkins')
+    print("Konichiwa AWS!, This is my first time creating Jenkins and shell Pipeline")
+    print("event = {}".format(event))
+    return {
+        'statusCode': 200,
+        'body': 'Hello from Lambda using shell scripting!',
+        
+    }
